@@ -3,6 +3,7 @@
   cursor: pointer;
   align-items: center;
 }
+
 .sidebarOption:hover {
   background-color: #f0f6f9;
   border-radius: 2em;
@@ -20,6 +21,6 @@
   margin-right: 0.7em;
 }
 
-.sidebarOption--active{
-  color : var(--twitter-color);
+.sidebarOption--active {
+  color: var(--twitter-color);
 }

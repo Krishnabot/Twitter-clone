@@ -1,16 +1,17 @@
-import React from "react";
-import "./Sidebar.css";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import HomeIcon from "@mui/icons-material/Home";
-import TagIcon from "@mui/icons-material/Tag";
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
-import ListAltIcon from "@mui/icons-material/ListAlt";
-import Person2Icon from "@mui/icons-material/Person2";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import SidebarOption from "./SidebarOption";
-import Button from "@mui/material/Button";
+import React from 'react';
+import './Sidebar.css';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import HomeIcon from '@mui/icons-material/Home';
+import TagIcon from '@mui/icons-material/Tag';
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
+import ListAltIcon from '@mui/icons-material/ListAlt';
+import Person2Icon from '@mui/icons-material/Person2';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import Button from '@mui/material/Button';
+import SidebarOption from './SidebarOption';
+
 function Sidebar() {
   return (
     <div className="sidebar">
