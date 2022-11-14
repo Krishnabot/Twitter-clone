@@ -17,7 +17,7 @@ function Sidebar() {
       {/* Twitter Icon */}
       <TwitterIcon />
       {/* home Icon */}
-      <SidebarOption Icon={HomeIcon} text="Home" />
+      <SidebarOption active Icon={HomeIcon} text="Home" />
 
       {/* TagIcon */}
       <SidebarOption Icon={TagIcon} text="Explore" />
