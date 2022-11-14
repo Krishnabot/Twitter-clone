@@ -1,0 +1,8 @@
+.tweet-btn {
+  background-color: var(--twitter-color) !important;
+  margin-top: 2em !important;
+  color: rgb(255, 255, 255) !important;
+  font-weight: 2000 !important;
+  border: none !important;
+  text-transform: inherit !important;
+}

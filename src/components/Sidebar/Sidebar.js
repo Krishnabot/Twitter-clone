@@ -10,7 +10,7 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import Person2Icon from "@mui/icons-material/Person2";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import SidebarOption from "./SidebarOption";
-
+import Button from "@mui/material/Button";
 function Sidebar() {
   return (
     <div className="sidebar">
@@ -39,6 +39,9 @@ function Sidebar() {
 
       {/* More Icon */}
       <SidebarOption Icon={MoreHorizIcon} text="More" />
+      <Button varient="outlined" className="tweet-btn" fullWidth>
+        Tweet
+      </Button>
     </div>
   );
 }
