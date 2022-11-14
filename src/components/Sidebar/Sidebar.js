@@ -13,33 +13,64 @@ import Button from '@mui/material/Button';
 import SidebarOption from './SidebarOption';
 
 function Sidebar() {
+  const sidebarOptionMenus = [
+    {
+      id: 1,
+      iconName: HomeIcon,
+      iconText: 'Home',
+    },
+    {
+      id: 2,
+      iconName: TagIcon,
+      iconText: 'Explore',
+    },
+    {
+      id: 3,
+      iconName: NotificationsNoneIcon,
+      iconText: 'Notifications',
+    },
+    {
+      id: 4,
+      iconName: MailOutlineIcon,
+      iconText: 'Messeges',
+    },
+    {
+      id: 5,
+      iconName: BookmarkBorderIcon,
+      iconText: 'Bookmarks',
+    },
+    {
+      id: 6,
+      iconName: ListAltIcon,
+      iconText: 'Lists',
+    },
+    {
+      id: 7,
+      iconName: TagIcon,
+      iconText: 'Explore',
+    },
+    {
+      id: 8,
+      iconName: Person2Icon,
+      iconText: 'Profile',
+    },
+    {
+      id: 9,
+      iconName: MoreHorizIcon,
+      iconText: 'More',
+    },
+  ];
   return (
     <div className="sidebar">
       {/* Twitter Icon */}
       <TwitterIcon />
-      {/* home Icon */}
-      <SidebarOption active Icon={HomeIcon} text="Home" />
-
-      {/* TagIcon */}
-      <SidebarOption Icon={TagIcon} text="Explore" />
-
-      {/* Notificcation Icon */}
-      <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
-
-      {/* Messege Icon  */}
-      <SidebarOption Icon={MailOutlineIcon} text="Messeges" />
-
-      {/* Bookmark Icon */}
-      <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
-
-      {/* List Icon */}
-      <SidebarOption Icon={ListAltIcon} text="Lists" />
-
-      {/* Profile Icon  */}
-      <SidebarOption Icon={Person2Icon} text="Profile" />
-
-      {/* More Icon */}
-      <SidebarOption Icon={MoreHorizIcon} text="More" />
+      {sidebarOptionMenus.map((item) => (
+        <SidebarOption
+          key={item.id}
+          Icon={item.iconName}
+          text={item.iconText}
+        />
+      ))}
       <Button varient="outlined" className="tweet-btn" fullWidth>
         Tweet
       </Button>
