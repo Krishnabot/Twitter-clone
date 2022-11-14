@@ -16,30 +16,29 @@ function Sidebar() {
     <div className="sidebar">
       {/* Twitter Icon */}
       <TwitterIcon />
-      <SidebarOption />
       {/* home Icon */}
-      <HomeIcon />
+      <SidebarOption Icon={HomeIcon} text="Home" />
 
       {/* TagIcon */}
-      <TagIcon />
+      <SidebarOption Icon={TagIcon} text="Explore" />
 
       {/* Notificcation Icon */}
-      <NotificationsNoneIcon />
+      <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
 
       {/* Messege Icon  */}
-      <MailOutlineIcon />
+      <SidebarOption Icon={MailOutlineIcon} text="Messeges" />
 
       {/* Bookmark Icon */}
-      <BookmarkBorderIcon />
+      <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
 
       {/* List Icon */}
-      <ListAltIcon />
+      <SidebarOption Icon={ListAltIcon} text="Lists" />
 
       {/* Profile Icon  */}
-      <Person2Icon />
+      <SidebarOption Icon={Person2Icon} text="Profile" />
 
       {/* More Icon */}
-      <MoreHorizIcon />
+      <SidebarOption Icon={MoreHorizIcon} text="More" />
     </div>
   );
 }
