@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import HomeIcon from '@mui/icons-material/Home';
@@ -13,11 +13,13 @@ import Button from '@mui/material/Button';
 import SidebarOption from './SidebarOption';
 
 function Sidebar() {
+  const [activeIndex, setActiveIndex] = useState(0);
   const sidebarOptionMenus = [
     {
       id: 1,
       iconName: HomeIcon,
       iconText: 'Home',
+      isActive: true,
     },
     {
       id: 2,
@@ -60,18 +62,25 @@ function Sidebar() {
       iconText: 'More',
     },
   ];
+
+  const handleOptionClick = (index) => {
+    setActiveIndex(index);
+  };
+
   return (
     <div className="sidebar">
       {/* Twitter Icon */}
       <TwitterIcon />
-      {sidebarOptionMenus.map((item) => (
+      {sidebarOptionMenus.map((item, index) => (
         <SidebarOption
           key={item.id}
           Icon={item.iconName}
           text={item.iconText}
+          active={index === activeIndex}
+          onClick={() => handleOptionClick(index)}
         />
       ))}
-      <Button varient="outlined" className="tweet-btn" fullWidth>
+      <Button variant="outlined" className="tweet-btn" fullWidth>
         Tweet
       </Button>
     </div>

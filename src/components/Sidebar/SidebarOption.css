@@ -21,6 +21,6 @@
   margin-right: 0.7em;
 }
 
-.sidebarOption--active {
+.sidebarOption__active {
   color: var(--twitter-color);
 }
