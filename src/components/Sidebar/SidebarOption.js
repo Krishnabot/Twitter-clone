@@ -19,7 +19,7 @@ function SidebarOption({
       onClick={handleClick}
     >
       <Icon />
-      <h2>{text}</h2>
+      {text}
     </button>
   );
 }

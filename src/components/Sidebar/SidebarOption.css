@@ -4,7 +4,8 @@
   align-items: center;
   border: none;
   background: transparent;
-  width: 20rem;
+  margin-right: 0.7em;
+  font-size: 1.3rem;
 }
 
 .sidebarOption:hover {
@@ -12,18 +13,13 @@
   border-radius: 2em;
   color: var(--twitter-color);
   transition: color 0.1s ease-out;
+  width: 15rem;
 }
 
 .MuiSvgIcon-root {
   padding: 0.7em;
 }
 
-.sidebarOption > h2 {
-  font-weight: 500;
-  font-size: 1.7em;
-  margin-right: 0.7em;
-}
-
 .sidebarOption__active {
-  color: var(--twitter-color);
+  font-weight: 900;
 }
