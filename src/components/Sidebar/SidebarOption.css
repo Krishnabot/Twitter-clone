@@ -2,6 +2,9 @@
   display: flex;
   cursor: pointer;
   align-items: center;
+  border: none;
+  background: transparent;
+  width: 20rem;
 }
 
 .sidebarOption:hover {
@@ -17,7 +20,7 @@
 
 .sidebarOption > h2 {
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.7em;
   margin-right: 0.7em;
 }
 

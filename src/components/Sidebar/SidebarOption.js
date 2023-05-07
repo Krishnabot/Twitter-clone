@@ -5,11 +5,22 @@ import './SidebarOption.css';
 function SidebarOption({
   text, Icon, active, onClick,
 }) {
+  const handleClick = (event) => {
+    if (onClick) {
+      event.preventDefault();
+      onClick();
+    }
+  };
+
   return (
-    <div className={`sidebarOption ${active ? 'sidebarOption__active' : ''}`} onClick={onClick}>
+    <button
+      type="button"
+      className={`sidebarOption ${active ? 'sidebarOption__active' : ''}`}
+      onClick={handleClick}
+    >
       <Icon />
       <h2>{text}</h2>
-    </div>
+    </button>
   );
 }
 
