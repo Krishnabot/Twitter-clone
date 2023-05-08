@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 import Sidebar from './components/Sidebar/Sidebar';
+import Feed from './components/Feed/Feed';
 
 function App() {
   return (
     <div className="app">
-      <h1>Twitter Clone</h1>
       {/* Icon Bar */}
       <Sidebar />
+      <Feed />
 
       {/* Twwet feed */}
 

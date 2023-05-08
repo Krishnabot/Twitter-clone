@@ -70,7 +70,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       {/* Twitter Icon */}
-      <TwitterIcon />
+      <TwitterIcon className="sidebar__twitter-icon" />
       {sidebarOptionMenus.map((item, index) => (
         <SidebarOption
           key={item.id}
@@ -80,7 +80,7 @@ function Sidebar() {
           onClick={() => handleOptionClick(index)}
         />
       ))}
-      <Button variant="outlined" className="tweet-btn" fullWidth>
+      <Button variant="outlined" className="sidebar__tweet" fullWidth>
         Tweet
       </Button>
     </div>
