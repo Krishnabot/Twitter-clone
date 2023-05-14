@@ -80,7 +80,7 @@ function Sidebar() {
           onClick={() => handleOptionClick(index)}
         />
       ))}
-      <Button variant="outlined" className="sidebar__tweet" fullWidth>
+      <Button variant="outlined" className="tweetbtn" fullWidth>
         Tweet
       </Button>
     </div>

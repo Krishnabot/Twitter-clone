@@ -12,3 +12,13 @@
   margin-right: auto;
   padding: 0 10px;
 }
+
+.tweetbtn {
+  background-color: var(--twitter-color) !important;
+  margin-top: 2em !important;
+  color: var(--color-white) !important;
+  font-weight: 900 !important;
+  border: none !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+}

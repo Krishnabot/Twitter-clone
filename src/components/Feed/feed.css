@@ -1,33 +1,31 @@
 .feed {
-    flex: 0.4;
-    border-right: 1px solid var(--twitter-background);
-    min-width: fit-content;
-    overflow-y: scroll;
+  flex: 0.4;
+  border-right: 1px solid var(--twitter-background);
+
+  /* min-width: fit-content; */
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* hide scroll bar for Chome Safari and Opera */
 
 .feed::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* hide scrollbar fpr IE . EDGE and firefox */
 
-.feed {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
 .feed__header {
-    position: sticky;
-    top: 0;
-    background: var(--color-white);
-    z-index: 100;
-    border: 1px solid var(--twitter-background);
-    padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  background: var(--color-white);
+  z-index: 100;
+  border: 1px solid var(--twitter-background);
+  padding: 15px 20px;
 }
 
 .feed__header > h2 {
-    font-size: 20px;
-    font-weight: 800;
+  font-size: 20px;
+  font-weight: 800;
 }
